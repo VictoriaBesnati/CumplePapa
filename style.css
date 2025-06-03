@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff6f91, #ff9472);
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6%;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff4268;
+  color: white;
+  cursor: pointer;
+  margin: 20% 0;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.mensaje {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.subtitulo {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.904);
+  margin-top: 10px;
+}
+
+#galeria {
+  display: none;
+  margin-top: 30px;
+  gap: 16px;
+  width: 100%;
+}
+
+#galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+#galeria img:hover {
+  transform: scale(1.05);
+}
+
+.mostrar {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 1s ease;
+}
+
+#galeria.mostrar {
+  display: grid;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.oculto {
+  display: none;
+}
+
+#torta-container {
+  margin-top: 40px;
+}
+
+#torta {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  transition: opacity 1s ease;
+}
+
+#btn-soplar {
+  margin-top: 6%;
+  padding: 0.8rem 2rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffa726;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-soplar:hover {
+  background-color: #fb8c00;
+}
+
+.footer {
+  background-color: #ff1744;
+  color: white;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 60px 0 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 960px;
+}
+
+
+
